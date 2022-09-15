@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOGO DA VELHA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quemJoga">
+        JOGADOR: VOCÊ
+    </div>
+    <table>
+        <tr>
+            <td class="p1" onclick="choice(1)"></td>
+            <td class="p2" onclick="choice(2)"></td>
+            <td class="p3" onclick="choice(3)"></td>
+        </tr>
+        <tr>
+            <td class="p4" onclick="choice(4)"></td>
+            <td class="p5" onclick="choice(5)"></td>
+            <td class="p6" onclick="choice(6)"></td>
+        </tr>
+        <tr>
+            <td class="p7" onclick="choice(7)"></td>
+            <td class="p8" onclick="choice(8)"></td>
+            <td class="p9" onclick="choice(9)"></td>
+        </tr>
+    </table>
+    <div class="cpuMsg">
+        GERANDO JOGADA...
+    </div>
+    <div class="cpu">
+
+    </div>
+    <div class="vencedor">
+        <div class="vencedorMsg">
+            <div class="msgVencedor"></div>
+            <button class="botao">JOGAR NOVAMENTE</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

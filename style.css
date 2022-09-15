@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    font-family: sans-serif;
+    color: #00ff00;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+td {
+    width: 5vw;
+    height: 5vw;
+    text-align: center;
+    font-size: 3em;
+}
+
+.p1, .p4{
+    border-right: 2px solid #00ff00;
+    border-bottom: 2px solid #00ff00;
+}
+
+.p2, .p5{
+    border-bottom: 2px solid #00ff00;
+}
+
+.p3, .p6{
+    border-left: 2px solid #00ff00;
+    border-bottom: 2px solid #00ff00;
+}
+
+.p7, .p8 {
+    border-right: 2px solid #00ff00;
+}
+
+.quemJoga {
+    margin-top: 57px;
+    margin-bottom: 77px;
+    font-weight: bolder;
+}
+
+.cpuMsg{
+    margin-top: 57px;
+    font-weight: bolder;
+    opacity: 0;
+}
+
+.cpuMsgEffect{
+    animation: opacity 500ms linear both;
+}
+
+@keyframes opacity{
+    to{
+        opacity: 1;
+    }
+}
+
+.cpu{
+    width: 77px;
+    height: 77px;
+    border: 7px solid;
+    border-top-color: #00ff00;
+    border-right-color: rgb(77, 77, 77);
+    border-bottom-color: rgb(77, 77, 77);
+    border-left-color: rgb(77, 77, 77);
+    border-radius: 50%;
+    margin-top: 27px;
+}
+
+.cpuEffects{
+    animation: rotate 700ms infinite; 
+    box-shadow: 0 0 0.7em #00ff00;
+}
+
+@keyframes rotate{
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+.vencedor {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    visibility: hidden;
+}
+
+.vencedorMsg{
+    width: 40vw;
+    height: 50vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid #00ff00;
+    border-radius: 7px;
+    background-color: black;
+    box-shadow: 0 0 0.7em #00ff00;
+}
+
+.botao{
+    margin-bottom: 37px;
+    padding: 10px;
+    background-color: transparent;
+    border: 2px solid #00ff00;
+    color: #00ff00;
+    font-weight: bolder;
+    border-radius: 7px;
+    transition: 0.7s;
+}
+
+.botao:hover{
+    background-color: #00ff00;
+    color: black;
+    transition: 0.7s;
+}
+.msgVencedor{
+    margin-bottom: 10vh;
+    font-size: 2em;
+    font-weight: bolder;
+}
+@media only screen and (max-width: 768px) {
+    td{
+        width: 57px;
+        height: 57px;
+    }
+    .vencedorMsg{
+        width: 77vw;
+        height: 40vh;
+    }
+
+    .msgVencedor{
+        margin-bottom: 10vh;
+        font-size: 1em;
+    }
+  }
